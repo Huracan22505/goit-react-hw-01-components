@@ -1,17 +1,14 @@
-import PaintingList from './components/PaintingList';
-import Section from './components/Section';
-import paintings from './paintings.json';
+import Profile from './components/Profile.js';
+import user from './user.json';
 
 export default function App() {
   return (
-    <div>
-      <Section title="Top of week">
-        <PaintingList items={paintings} />
-      </Section>
-
-      <Section title="best">
-        <PaintingList items={paintings} />
-      </Section>
-    </div>
+    <Profile
+      name={user.name}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+    />
   );
 }
