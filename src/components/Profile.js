@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 const Profile = ({ avatar, name, tag, location, stats }) => {
   return (
     <div class="profile">
