@@ -2,7 +2,7 @@ const FriendList = function ({ friends }) {
   return (
     <ul class="friend-list">
       {friends.map(friend => (
-        <li class="item">
+        <li key={friend.id} class="item">
           <span class="status"></span>
           <img
             class="avatar"
