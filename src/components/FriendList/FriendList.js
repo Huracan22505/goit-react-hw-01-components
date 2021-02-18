@@ -1,16 +1,18 @@
+import s from './FriendList.module.css';
+
 const FriendList = function ({ friends }) {
   return (
-    <ul class="friend-list">
+    <ul className={s.friendList}>
       {friends.map(friend => (
-        <li key={friend.id} class="item">
-          <span class="status"></span>
+        <li key={friend.id} className={s.item}>
+          <span className={s.status}></span>
           <img
-            class="avatar"
+            className={s.avatar}
             src={friend.avatar}
             alt={friend.name}
             width="48"
           />
-          <p class="name">{friend.name}</p>
+          <p className={s.name}>{friend.name}</p>
         </li>
       ))}
     </ul>
