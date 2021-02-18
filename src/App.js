@@ -10,7 +10,7 @@ import TransactionHistory from './components/TransactionHistory';
 
 export default function App() {
   return (
-    <div>
+    <>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -21,6 +21,6 @@ export default function App() {
       <Statistics stats={statisticalData} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </>
   );
 }
