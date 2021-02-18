@@ -10,7 +10,7 @@ import TransactionHistory from './components/TransactionHistory';
 
 export default function App() {
   return (
-    
+  
       <Profile
         name={user.name}
         tag={user.tag}
