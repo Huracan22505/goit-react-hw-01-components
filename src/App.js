@@ -16,9 +16,11 @@ export default function App() {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        stats={user.stats}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
       />
-      <Statistics stats={statisticalData} />
+      <Statistics title="Upload stats" stats={statisticalData} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </>

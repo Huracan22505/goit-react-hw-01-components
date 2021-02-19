@@ -15,8 +15,23 @@ code {
     monospace;
 }
 
-/* img {
-  display: block;
-  min-width: 100%;
-  height: auto;
+/* #root {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
 } */
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
